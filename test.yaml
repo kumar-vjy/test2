@@ -1,0 +1,23 @@
+---
+- hosts: all
+  tasks:
+    - name: "debug"
+      ansible.builtin.debug:
+        msg: "test"
+
+- hosts: all
+  vars:
+    item: "test1"
+  tasks:
+    - name: debugvra"
+      ansible.builtin.debug:
+        var: item
+
+
+- hosts: all
+  vars:
+    fruit: "Apple"
+  tasks:
+    - name: debugvra"
+      ansible.builtin.debug:
+        msg: "{{ fruit }}"
